@@ -8,8 +8,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import pickle
 
 #read modle in read-binary mode
-model = joblib.load(open('random_model.pkl','rb'))
-feature_extraction = joblib.load('vectorizer.pkl')
+model = pickle.load(open('model_RandomForest.pkl','rb'))
+feature_extraction = pickle.load(open('vectorizer.pkl','rb'))
 
 app = Flask(__name__)
 
